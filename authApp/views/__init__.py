@@ -9,6 +9,4 @@ from .SaleView import SaleDeleteView
 from .SaleView import SaleReadView
 from .SaleView import SaleUpdateView
 from .InvoiceViews import InvoiceCreateView
-from .InvoiceViews import InvoiceDeleteView
-from .InvoiceViews import InvoiceReadView
-from .InvoiceViews import InvoiceUpdateView
+

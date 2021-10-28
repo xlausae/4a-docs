@@ -26,13 +26,6 @@ urlpatterns = [
     path('product/<int:user>/',                     views.ProductReadView.as_view()), # view information for all products
     path('product/update/<int:user>/<int:pk>/',     views.ProductUpdateView.as_view()), # update a product
     path('product/remove/<int:user>/<int:pk>/',     views.ProductDeleteView.as_view()), # delete a product
-    path('sale/create/',                            views.SaleCreateView.as_view()), # create a new sale
-    path('sale/<int:user>/',                        views.SaleReadView.as_view()), # view information for all sales
-    path('sale/update/<int:user>/<int:pk>/',        views.SaleUpdateView.as_view()), # update a sale
-    path('sale/remove/<int:user>/<int:pk>/',        views.SaleDeleteView.as_view()), # delete a sale
-    path('invoice/create/',                         views.InvoiceCreateView.as_view()), # create a new invoice
-    path('invoice/<int:user>/',                     views.InvoiceReadView.as_view()), # view information for all invoices
-    path('invoice/update/<int:user>/<int:pk>/',     views.InvoiceUpdateView.as_view()), # update a invoice
-    path('invoice/remove/<int:user>/<int:pk>/',     views.InvoiceDeleteView.as_view()), # delete a invoice
+    path('invoice/create/',                         views.InvoiceCreateView.as_view()), # create new invoice
 ]
 

@@ -1,16 +1,21 @@
 from rest_framework         import serializers
 from authApp.models.invoice import Invoice
+from authApp.models.sale    import Sale
+from authApp.serializers.saleSerializer import SaleSerializer
 
-class invoiceSerializer(serializers.ModelSerializer):
+class InvoiceSerializer(serializers.ModelSerializer):
+
+    sales = SaleSerializer(many=True)
+
     class Meta:
-        model: Invoice
-        fields=['date','user', 'paymentMethod']
-    def to_representation(self, obj):
-        invoice= Invoice.objects.get(id=obj.id)
+        model  = Invoice
+        fields = ["id","date","user","paymentMethod","sales"]
 
-        return {
-            'date':invoice.date,
-            'user':invoice.user,
-            'paymentMethod':invoice.paymentMethod
+    def create(self,validated_data):
 
-        }
+        listSaleData    = validated_data.pop("sales")
+        invoiceInstance = Invoice.objects.create(**validated_data)
+        
+        for saleData in listSaleData:
+            Sale.objects.create(invoice=invoiceInstance,**saleData)
+        return invoiceInstance
