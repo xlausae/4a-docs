@@ -8,3 +8,4 @@ class Sale(models.Model):
     invoice = models.ForeignKey(Invoice, related_name='sale',on_delete=models.SET_NULL,null=True)
     paymentMethod = models.CharField('PaymentMethod', max_length = 30)
     amount= models.IntegerField()
+    cost=models.FloatField('Cost',default=0)
