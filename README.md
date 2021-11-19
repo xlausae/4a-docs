@@ -11,9 +11,9 @@ Microservicios
 4. Generar las migraciones de la aplicación 
     - python manage.py makemigrations authApp
 5. Ejecutar las migraciones para la creación de una base de datos denominada *dbg6*
-    - python manage_dev.py migrate (*NOTA: Para la ejecución en el local se debe usar manage_dev.py, ya que manage.py se utilizará para el despliegue en Hreoku)
+    - python manage_dev.py migrate (*NOTA: Para la ejecución en el local se debe usar manage_dev.py, ya que manage.py se utilizará para el despliegue en Heroku)
 7. Iniciar la aplicación desde la carpeta raíz
-    - python manage_dev.py runserver (*NOTA: Para la ejecución en el local se debe usar manage_dev.py, ya que manage.py se utilizará para el despliegue en Hreoku)
+    - python manage_dev.py runserver (*NOTA: Para la ejecución en el local se debe usar manage_dev.py, ya que manage.py se utilizará para el despliegue en Heroku)
 
 Pruebas del microservicio:
 
