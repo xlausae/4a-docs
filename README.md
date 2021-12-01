@@ -17,4 +17,4 @@ Microservicios
 
 Pruebas del microservicio:
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/45e3d16867042550e655?action=collection%2Fimport)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/f54a4b60e114921886dc?action=collection%2Fimport)
