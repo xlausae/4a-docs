@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.misiontic</groupId>
-	<artifactId>cart_ms</artifactId>
+	<artifactId>order_ms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cart_ms</name>
-	<description>Microservice Cart</description>
+	<name>order_ms</name>
+	<description>Microservice Order</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

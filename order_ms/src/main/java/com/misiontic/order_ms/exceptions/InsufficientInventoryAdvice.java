@@ -1,4 +1,4 @@
-package com.misiontic.cart_ms.exceptions;
+package com.misiontic.order_ms.exceptions;
 
 public class InsufficientInventoryAdvice {
 }

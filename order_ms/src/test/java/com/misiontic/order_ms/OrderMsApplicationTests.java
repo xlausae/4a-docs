@@ -1,10 +1,10 @@
-package com.misiontic.cart_ms;
+package com.misiontic.order_ms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CartMsApplicationTests {
+class OrderMsApplicationTests {
 
 	@Test
 	void contextLoads() {

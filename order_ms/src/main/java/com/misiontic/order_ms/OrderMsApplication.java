@@ -1,13 +1,13 @@
-package com.misiontic.cart_ms;
+package com.misiontic.order_ms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CartMsApplication {
+public class OrderMsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CartMsApplication.class, args);
+		SpringApplication.run(OrderMsApplication.class, args);
 	}
 
 }
