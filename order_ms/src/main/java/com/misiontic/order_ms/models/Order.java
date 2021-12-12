@@ -1,23 +1,24 @@
 package com.misiontic.order_ms.models;
 
 import org.springframework.data.annotation.Id;
-
-import java.util.List;
+import java.util.Date;
 
 public class Order {
     @Id
     private String id;
     private String username;
-    private String name;
+    private String name;    /* Nombre del producto */
     private Integer quantity;
     private Integer total;
+    private Date date;
 
-    public Order(String id, String username, String name, Integer quantity, Integer total){
+    public Order(String id, String username, String name, Integer quantity, Integer total, Date date) {
         this.id = id;
         this.username = username;
         this.name = name;
         this.quantity = quantity;
         this.total = total;
+        this.date = date;
     }
 
     public String getId() {
@@ -56,4 +57,11 @@ public class Order {
         this.total = total;
     }
 
-}   
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+}
