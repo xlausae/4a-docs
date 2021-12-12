@@ -27,8 +27,7 @@ SECRET_KEY = 'django-insecure-gbi$o4o8q@)wtjygeico@bm%^^v24khgc8#v_z74)mw3t$p^j@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-CORS_ALLOW_ALL_ORIGINS = True
+
 
 
 # Application definition
@@ -42,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'authApp',
-    'corsheaders',
+   
 ]
 
 SIMPLE_JWT={
@@ -64,7 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    
 ]
 
 REST_FRAMEWORK={
@@ -76,7 +75,7 @@ REST_FRAMEWORK={
     )
 }
 
-AUTH_USER_MODEL = 'authApp.user'
+
 
 ROOT_URLCONF = 'authProject.urls'
 
@@ -105,10 +104,10 @@ WSGI_APPLICATION = 'authProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbjcdpk2tfuj01',
-        'USER': 'knzhienofydudl',
-        'PASSWORD': '3e1a150ff67fb267be55982b25f780dceaa60d549d0a65053f7c669e3f3314e9',
-        'HOST': 'ec2-52-3-130-181.compute-1.amazonaws.com',
+        'NAME': 'd6scng8mrnmu7n',
+        'USER': 'pleydgyuvxugps',
+        'PASSWORD': '235a9fefdb92097ecdd9fe90628252f712a402b8fd3a1ebf193c61f33f4b9e18',
+        'HOST': 'ec2-3-228-75-39.compute-1.amazonaws.com',
         'PORT': '5432',
     
     }
